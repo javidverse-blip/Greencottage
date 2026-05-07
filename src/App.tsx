@@ -18,6 +18,9 @@ import {
   X,
 } from 'lucide-react';
 
+import logo from "./Logo.png";
+import herosectionphoto from "./background.jpeg";
+
 function useFadeIn() {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -86,7 +89,7 @@ const SERVICES = [
 
 const GALLERY_IMAGES = [
   {
-    src: 'https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=800',
+    src: herosectionphoto,
     alt: 'Cozy cottage exterior',
     span: 'col-span-2 row-span-2',
   },
@@ -138,7 +141,12 @@ function Navbar() {
               scrolled ? 'text-primary' : 'text-white'
             }`}
           >
-            GRACE
+<img
+  src={logo}
+  alt="Logo"
+  width={100}
+  height={50}
+/>
           </a>
 
           {/* Desktop nav */}
@@ -217,7 +225,7 @@ function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1920')",
+            `url(${herosectionphoto})`,
         }}
       />
       {/* Overlay */}
