@@ -21,3 +21,7 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Legacy standalone static files not used by the Vite app
+script.js
+styles.css
