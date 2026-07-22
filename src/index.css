@@ -1230,6 +1230,10 @@ textarea[aria-invalid='true'] {
 }
 
 .footer-credit a {
+  margin-left: 0.25rem;
+}
+
+.footer-credit a {
   color: var(--gold-light);
   font-weight: 800;
 }
@@ -1257,12 +1261,21 @@ textarea[aria-invalid='true'] {
 }
 
 @media (max-width: 1024px) {
+  .nav-shell {
+    position: relative;
+    justify-content: center;
+  }
+
   .desktop-nav,
   .nav-cta {
     display: none;
   }
 
   .mobile-menu-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     display: inline-flex;
   }
 
@@ -1307,20 +1320,49 @@ textarea[aria-invalid='true'] {
 
   .footer-brand img {
     margin-left: 0;
+    margin-inline: auto;
+  }
+
+  .footer-grid,
+  .footer-brand p {
+    text-align: center;
+  }
+
+  .footer-brand p {
+    margin-inline: auto;
+  }
+
+  .site-footer p {
+    justify-content: center;
+  }
+
+  .footer-links {
+    justify-items: center;
   }
 
   .footer-bottom {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+    text-align: center;
   }
 
   .footer-credit {
-    justify-content: flex-start;
-    text-align: left;
+    display: grid;
+    gap: 0.15rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-credit-separator {
+    display: none;
+  }
+
+  .footer-credit a {
+    margin-left: 0;
   }
 
   .hero-image-wrap {
-    justify-self: start;
+    justify-self: center;
     max-width: 460px;
   }
 
@@ -1359,12 +1401,25 @@ textarea[aria-invalid='true'] {
   }
 
   .hero-layout {
+    justify-items: center;
     padding-top: 6.5rem;
+  }
+
+  .hero-copy {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero-tagline,
+  .hero-subtitle,
+  .hero-existing-copy {
+    margin-inline: auto;
   }
 
   .hero-actions,
   .cta-actions,
   .form-actions {
+    align-items: center;
     flex-direction: column;
   }
 
@@ -1373,10 +1428,13 @@ textarea[aria-invalid='true'] {
   }
 
   .hero-meta {
+    align-items: center;
     flex-direction: column;
+    width: 100%;
   }
 
   .hero-meta span {
+    justify-content: center;
     width: 100%;
   }
 
@@ -1403,7 +1461,13 @@ textarea[aria-invalid='true'] {
   }
 
   .service-card {
+    align-items: center;
     min-height: 190px;
+    text-align: center;
+  }
+
+  .service-card h3 {
+    margin-inline: auto;
   }
 
   .progress-list {

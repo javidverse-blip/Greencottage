@@ -37,7 +37,9 @@ export function Footer() {
       <div className="footer-bottom page-pad">
         <p>© {new Date().getFullYear()} Grace Cottage. All rights reserved.</p>
         <p className="footer-credit">
-          Designed by JavidVerse - For All Creative Solutions | Email us at:{' '}
+          <span>Designed by JavidVerse - For All Creative Solutions</span>
+          <span className="footer-credit-separator"> | </span>
+          <span>Email us at:</span>
           <a href="mailto:javidverse@gmail.com">javidverse@gmail.com</a>
         </p>
       </div>
