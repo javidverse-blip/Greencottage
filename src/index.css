@@ -1349,8 +1349,18 @@ textarea[aria-invalid='true'] {
   .footer-credit {
     display: grid;
     gap: 0.15rem;
+    align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  .site-footer .footer-credit {
+    display: grid;
+  }
+
+  .footer-credit span,
+  .footer-credit a {
+    display: block;
   }
 
   .footer-credit-separator {
@@ -1446,6 +1456,11 @@ textarea[aria-invalid='true'] {
     left: 1.25rem;
     right: 1.25rem;
     bottom: 1.6rem;
+    text-align: center;
+  }
+
+  .hero-card-note strong {
+    letter-spacing: 0.18em;
   }
 
   .about-image::after,
